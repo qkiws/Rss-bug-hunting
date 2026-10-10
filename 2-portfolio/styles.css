@@ -32,15 +32,17 @@ body {
   text-decoration: none;
 }
 
+
 .gallery {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 0;
-  max-width: 1000px;
+  gap: 20px;
+  max-width: 940px;
   margin: 0 auto;
 }
+
 
 .card {
   width: 300px;
