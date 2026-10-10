@@ -40,11 +40,18 @@ function clearCompleted() {
 }
 
 function getVisibleTasks() {
+  if (currentFilter === 'active'){
+    return tasks.filter((t) => !t.done)
+  } else if (currentFilter === 'done'){
+    return tasks.filter((t) => t.done)
+  }
+    
   return tasks;
 }
 
 function updateCounter() {
-  counter.textContent = "Активных задач: " + tasks.length;
+  const activeTasks = tasks.filter((task) => !task.done);
+  counter.textContent = "Активных задач: " + activeTasks.length;
 }
 
 function render() {
