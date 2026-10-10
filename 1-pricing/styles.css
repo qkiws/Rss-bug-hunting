@@ -81,12 +81,12 @@ body {
 }
 
 .features li {
-  padding: 0;
+  padding-block: 6px;
   margin-bottom: 8px;
 }
 
 .features li::before {
-  content: "";
+  content: "✓";
   color: #22c55e;
   font-weight: 700;
   margin-right: 8px;
@@ -96,7 +96,7 @@ body {
   display: inline-block;
   padding: 12px 28px;
   border-radius: 8px;
-  background: #cbd5e1;
+  background: #2563eb;
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
