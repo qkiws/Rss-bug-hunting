@@ -48,6 +48,7 @@ function updateCounter() {
 }
 
 function render() {
+  list.textContent=''
   const visible = getVisibleTasks();
   for (let i = 0; i <= visible.length; i++) {
     const task = visible[i];
